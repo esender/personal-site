@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "ru-ru"
 title = "Marat Abdulin"
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 [params]
   email = "marat@esender.me"
