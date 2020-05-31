@@ -1,0 +1,37 @@
+<div class="container">
+  <hr class="delimiter">
+</div>
+<footer class="footer">
+  <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+  <div class="or">or</div>
+  <ul class="social-links">
+    <li class="social-links-item">
+      <a href="{{ .Site.Params.linkedinLink }}">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="social-icon">
+          <use xlink:href="/common/social-icons.svg#linkedin"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-links-item">
+      <a href="{{ .Site.Params.telegramLink }}">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="social-icon">
+          <use xlink:href="/common/social-icons.svg#telegram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-links-item">
+      <a href="{{ .Site.Params.twitterLink }}">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="social-icon">
+          <use xlink:href="/common/social-icons.svg#twitter"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="social-links-item">
+      <a href="{{ .Site.Params.githubLink }}">
+        <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="social-icon">
+          <use xlink:href="/common/social-icons.svg#github"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</footer>

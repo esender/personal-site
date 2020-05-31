@@ -1,0 +1,29 @@
+.container {
+  padding: var(--page-spacings);
+}
+
+@media (--tablet) {
+  .container {
+    max-width: var(--max-page-width);
+    margin: 0 auto;
+  }
+}
+
+.content {
+  margin: 0 auto;
+}
+
+@media (--small-tablet) {
+  .content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (--tablet) {
+  .content {
+    max-width: var(--max-content-width);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

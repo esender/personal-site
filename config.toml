@@ -1,0 +1,11 @@
+baseURL = "/"
+languageCode = "ru-ru"
+title = "Marat Abdulin"
+
+[params]
+  email = "marat@esender.me"
+  linkedinLink = "https://www.linkedin.com/in/esender/"
+  telegramLink = "https://t.me/esender"
+  twitterLink = "https://twitter.com/esender_"
+  githubLink = "https://github.com/esender"
+  resumeLink = "/files/CV_Marat_Abdulin_2019-12-25.pdf"

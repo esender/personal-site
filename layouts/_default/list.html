@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <div class="content">
+    {{- .Content -}}
+    <div class="projects">
+      {{ range .Pages }}
+        <div class="project">
+          <h2>{{ .Title }}</h2>
+          {{ .Content }}
+          <ul class="project-links">
+            {{ range .Params.links }}
+              <li>
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" class="project-icon">
+                  <use xlink:href="/common/social-icons.svg#{{ .icon }}"></use>
+                </svg>
+                <a href="{{ .url }}" class="project-link">{{ .copy }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

@@ -1,0 +1,12 @@
+@import 'configuration/normalize.css';
+@import 'configuration/variables.css';
+@import 'configuration/typography.css';
+
+@import 'parts/page.css';
+@import 'parts/header.css';
+@import 'parts/footer.css';
+@import 'parts/main.css';
+
+@import 'pages/homepage.css';
+@import 'pages/resume.css';
+@import 'pages/projects.css';

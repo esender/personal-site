@@ -1,0 +1,16 @@
+<head>
+  <meta charset="utf-8">
+  <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <meta itemprop="gender" content="male">
+  <meta itemprop="url" content="https://esender.me">
+  <link rel="shortcut icon" href="/favicon.ico" sizes="48x48" >
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" >
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" >
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" >
+  {{ $stylesheet := .Site.Data.webpack_assets.styles }}
+  {{ with $stylesheet.css }}
+    <link href="{{ relURL (printf "%s%s" "dist/" .) }}" rel="stylesheet">
+  {{ end }}
+</head>

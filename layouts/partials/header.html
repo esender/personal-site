@@ -1,0 +1,14 @@
+<header class="header">
+  <div class="name">Marat Abdulin</div>
+  <nav>
+    <ul class="navigation-list">
+      {{ range .Site.Menus.main }}
+        <li class="navigation-item">
+          <a href="{{ .URL }}">
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </nav>
+</header>
