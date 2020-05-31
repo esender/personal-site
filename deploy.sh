@@ -5,7 +5,9 @@ set -e
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
-cd public && find ./ -name '[!.]*' -exec rm -rf {} + && cd ..
+cd public
+find ./ -name '[!.]*' ! -name 'CNAME' -exec rm -rf {} +
+cd ..
 
 # Build frontend
 cd src
